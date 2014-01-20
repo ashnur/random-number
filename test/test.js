@@ -16,6 +16,7 @@ void function(){
       if ( min     != null ) opts.min     = min
       if ( max     != null ) opts.max     = max
       if ( integer != null ) opts.integer = integer
+      if ( opts.min >= opts.max ) opts.max += Math.abs(opts.min) + Math.abs(opts.max)
       return opts
     })
 

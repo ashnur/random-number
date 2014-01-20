@@ -11,6 +11,7 @@ void function(root){
     } else if ( options.max == null ) {
       options.max = options.min + 1
     }
+    if ( options.max <= options.min ) throw new Error('invalid options, max must be > min')
     var r = Math.random() * (options.max - options.min + Number(!!options.integer)) + options.min
     return options.integer ? Math.floor(r) : r
   }
