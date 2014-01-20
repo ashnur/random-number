@@ -26,7 +26,5 @@
     "tape": "~2.3.2",
     "claire": "~0.4.1"
   },
-  "dependencies": {
-    "xtend": "~2.1.1"
-  }
+  "dependencies": {}
 }
