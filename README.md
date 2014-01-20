@@ -17,16 +17,16 @@ the exported function takes an option **object** with 3 meaningful properties
 
 ### Examples
 - all three
-``` javascript
-// this is the functionality i like the most
-var rn = require('random-number');
-var options = {
-  min:  -1000
-, max:  1000
-, integer: true
-}
-rn(options) // example outputs → -187, 636
-```
+  ``` javascript
+  // this is the functionality i like the most
+  var rn = require('random-number');
+  var options = {
+    min:  -1000
+  , max:  1000
+  , integer: true
+  }
+  rn(options) // example outputs → -187, 636
+  ```
 - only `min`
 ``` javascript
 var rn = require('random-number');
