@@ -1,5 +1,5 @@
 void function(){
-    var klara = require('../klara.js')
+    var klara = require('./klara.js')
     var claire = require('claire')
     var Int = claire.data.Int
     var choice = claire.choice
