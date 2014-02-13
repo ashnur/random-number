@@ -29,9 +29,8 @@ void function(root){
   }
 
   function generator(options){
-    options = defaults(optsions)
+    options = defaults(options)
     return function(min, max, integer){
-      var options = {}
       options.min     = min     || options.min
       options.max     = max     || options.max
       options.integer = integer || options.integer
