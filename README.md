@@ -28,6 +28,33 @@ var options = {
 }
 rn(options) // example outputs → -187, 636
   ```
+#### If you need the same (or almost the same settings many time) you can create a generator instead of passing the options over and over again
+
+``` javascript
+var rn = require('random-number');
+var gen = rn.generator({
+  min:  -1000
+, max:  1000
+, integer: true
+}
+gen() // example outputs → -350
+```
+
+#### What is neat about generators, that you can overwrite any of the settings
+*generator( min, max, integer)* - all arguments are optional:
+``` javascript
+var rn = require('random-number');
+var gen = rn.generator({
+  min:  -1000
+, max:  1000
+, integer: true
+}
+gen(500) // example outputs → 735
+gen(500, null, false) // example outputs → 828.6001032683998
+
+```
+
+
 - only `min`
 
 ``` javascript

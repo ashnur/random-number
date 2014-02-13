@@ -33,7 +33,7 @@ void function(root){
     return function(min, max, integer){
       options.min     = min     || options.min
       options.max     = max     || options.max
-      options.integer = integer || options.integer
+      options.integer = integer != null ? integer : options.integer
       return random(options)
     }
   }
