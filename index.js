@@ -31,8 +31,8 @@ void function(root){
   function generator(options){
     options = defaults(options)
     return function(min, max, integer){
-      options.min     = min     || options.min
-      options.max     = max     || options.max
+      options.min     = min != null ? min : options.min
+      options.max     = max != null ? max : options.max
       options.integer = integer != null ? integer : options.integer
       return random(options)
     }
