@@ -36,7 +36,7 @@ var gen = rn.generator({
   min:  -1000
 , max:  1000
 , integer: true
-}
+})
 gen() // example outputs → -350
 ```
 
